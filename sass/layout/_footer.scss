@@ -1,0 +1,23 @@
+.footer {
+  background-color: $footer-bg-color;
+  padding: 60px 0;
+}
+// .footer-container {
+//   display: flex;
+//   align-items: baseline;
+// }
+.footer__nav {
+  margin-right: 70px;
+}
+.join-networks {
+  width: 206px;
+  margin-right: auto;
+}
+.join-networks__text,.subscription__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+}

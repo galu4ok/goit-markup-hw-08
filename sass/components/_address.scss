@@ -1,0 +1,27 @@
+.address__link {
+  color: $footer-link-color;
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+}
+}
+.address__link--map {
+  color: $primary-white-color;
+  transition: color $duration $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+}
+}
+.address__item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-white-color;
+
+  &:not(:last-child) {
+  margin-bottom: 9px;
+}
+}

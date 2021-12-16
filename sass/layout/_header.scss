@@ -1,0 +1,12 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: $primary-white-color;
+  border-bottom: 1px solid $border-header-line;
+}
+// .header-container {
+//   @include flex ($jc:null);
+// }

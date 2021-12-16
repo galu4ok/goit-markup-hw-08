@@ -1,0 +1,25 @@
+.contacts {
+  @extend %flexCenter;
+  margin-left: auto;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts__icon{
+  margin-right: 10px;
+  fill:currentColor;
+}
+.contacts__link {
+  color: $secondary-text-color;
+  @include flex ($jc:null);
+  @include font (14px,500,1.14);
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  transition: color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+

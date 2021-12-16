@@ -1,0 +1,30 @@
+.customers__list {
+  display: flex;
+  justify-content: center;
+}
+.customers__item {
+  width: 170px;
+  height: 92px;
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+.customers__link {
+  width: 100%;
+  height: 100%;;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  @include flex ();
+  background-color: $primary-white-color;
+  color: #afb1b8;
+  transition: color $duration $timing-function, border-color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+  color: $accent-color;
+  border-color: $accent-color;
+}
+}
+.customers__icon {
+  fill: currentColor;
+}

@@ -1,0 +1,23 @@
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $secondary-text-color;
+}
+.features__list {
+@include flex ($jc:null);
+}
+.features__item {
+  width: 270px;
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+}
+.features__thumb {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  @include flex ();
+  background-color: $team-bg-color;
+  margin-bottom: 30px;
+  } 
+  
