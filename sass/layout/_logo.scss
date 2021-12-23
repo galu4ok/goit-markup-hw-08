@@ -1,7 +1,12 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  @include font (26px,700,1.19);
+  // @include font (26px,700,1.19);
+  @include font (24px,700,1.17);
   color: $accent-color;
+
+  @media screen and (min-width: 1200px) {
+    @include font (26px,700,1.19);                        
+  }
 }
 .header__logo {
   padding: 24px 0;

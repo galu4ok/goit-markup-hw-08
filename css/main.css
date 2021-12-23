@@ -347,8 +347,14 @@ body {
 }
 
 .container--footer {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .section {
@@ -460,6 +466,10 @@ body {
 
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+
+.address__list {
+  margin-bottom: 60px;
 }
 
 .address__link {
@@ -802,18 +812,20 @@ body {
   padding: 63px 24px;
 }
 
-.subscription-form {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: flex;
+  }
 }
 
 .subscription-form__input {
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -830,6 +842,15 @@ body {
   align-items: center;
   justify-content: center;
   padding: 10px 28px;
+}
+
+.subscription__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .icon-telegram {
@@ -889,10 +910,18 @@ body {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+  }
 }
 
 .header__logo {
@@ -1204,16 +1233,16 @@ body {
   padding: 60px 0;
 }
 
-.footer__nav {
-  margin-right: 70px;
+.footer__tablet {
+  margin-bottom: 60px;
 }
 
 .join-networks {
   width: 206px;
-  margin-right: auto;
+  margin: auto;
 }
 
-.join-networks__text, .subscription__text {
+.join-networks__text {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;

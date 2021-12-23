@@ -18,5 +18,10 @@
   @include flex ($jc:null);
 }
 .container--footer {
-  @include flex($ai:baseline,$jc:null);
+  // @include flex($ai:baseline,$jc:null);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    @include flex($ai:baseline,$jc:null);
+  }
 }

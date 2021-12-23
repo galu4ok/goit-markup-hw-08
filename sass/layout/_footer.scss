@@ -6,17 +6,18 @@
 //   display: flex;
 //   align-items: baseline;
 // }
-.footer__nav {
-  margin-right: 70px;
+.footer__tablet {
+  margin-bottom: 60px;
 }
+// .footer__nav {
+//   margin-right: 70px;
+// }
 .join-networks {
   width: 206px;
-  margin-right: auto;
+  margin: auto;
 }
-.join-networks__text,.subscription__text {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
+.join-networks__text {
+  @include font (14px,700,1.14);
   text-transform: uppercase;
   color: $primary-white-color;
   margin-bottom: 20px;
