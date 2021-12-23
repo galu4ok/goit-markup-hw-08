@@ -365,7 +365,7 @@ body {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .section__duties {
     display: none;
   }
@@ -1114,16 +1114,27 @@ body {
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  margin: -15px;
 }
 
 .customers__item {
-  width: 170px;
   height: 92px;
+  margin: 15px;
+  flex-basis: calc(100% / 2 - 30px);
 }
 
-.customers__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .customers__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .customers__link {
