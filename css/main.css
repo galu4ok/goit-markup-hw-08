@@ -361,6 +361,22 @@ body {
   }
 }
 
+.section__team {
+  background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 1199px) {
+  .section__duties {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__duties {
+    padding: 0 0 94px 0;
+  }
+}
+
 .section__title {
   font-size: 28px;
   font-weight: 700;
@@ -1019,10 +1035,6 @@ body {
   color: #757575;
 }
 
-.duties {
-  padding: 0 0 94px 0;
-}
-
 .duties__item {
   position: relative;
 }
@@ -1033,10 +1045,6 @@ body {
 
 .duties__list {
   display: flex;
-}
-
-.team {
-  background-color: #f5f4fa;
 }
 
 .team__list {

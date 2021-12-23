@@ -4,4 +4,17 @@
   @media screen and (min-width: 1200px) {
     padding: 94px 0;
   }
+
+  &__team {
+  background-color: $team-bg-color;
   }
+
+  &__duties{
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 0 94px 0;
+  }
+  }
+}
