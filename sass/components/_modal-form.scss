@@ -5,8 +5,6 @@
   margin-bottom: 20px;
 }
 .modal-form__agreement-field {
-  @extend %flexCenter;
-  justify-content: center;
   margin-bottom: 30px;
   }
 .modal-form__input {
@@ -54,12 +52,12 @@
   }
 }
 .modal-form__label {
-  font-size: 12px;
-  line-height: 1.17;
+  @include font (12px,400,1.17);
   letter-spacing: 0.01em;
+
   display: block;
   margin-bottom: 4px;
-  color:$secondary-text-color
+  color:$secondary-text-color;
 }
 .modal-form__wrap {
   position: relative;
@@ -93,19 +91,21 @@
 }
 .modal-form__check-text{
   position: relative;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font (12px,400,1.17);
   color: $secondary-text-color;
-  @extend %flexCenter;
-
+  @include flex ();
+  
   span {
   width: 16px;
   height: 15px;
   border: 2px solid $main-text-color;
-  margin-right: 7px;
+  margin-right: 8px;
   border-radius: 2px;
-  @extend %flexCenter;
-  justify-content: center;
+  @include flex ();
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font (14px,400,1.71);
   }
 }
 .modal-form__icon-check {
@@ -129,7 +129,6 @@
 .modal-form__agreement-link {
   color: $accent-color;
   text-decoration-skip-ink: none;
-  margin-left: 5px;
 }
 .modal-form__button {
   padding: 10px 55px;

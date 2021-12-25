@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 5;
   width: 100vw;
   height: 100vh;
   background-color:$backdrop-bg-color;
@@ -17,24 +17,38 @@
   &.is-hidden.modal {
   opacity: 0;
   transform: scale(0.5) translate(-50%, -50%);
-}
+  } 
 }
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  width: 98%;
+  height: 98%;
+  padding: 40px;
+
   background-color: $primary-white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px;
   opacity: 1;
   transform: scale(1) translate(-50%, -50%);
   transition: opacity $duration $timing-function, transform $duration $timing-function;
+
+  @media screen and (max-width: 1199.98px) {
+    max-width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__title{
-  @include font (20px,700,1.15);
+  @include font (20px,700,1.5);
   text-align: center;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    @include font (20px,700,1.15);
+  }
 }

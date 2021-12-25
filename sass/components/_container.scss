@@ -1,5 +1,4 @@
 .container {
-  // width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -18,7 +17,6 @@
   @include flex ($jc:null);
 }
 .container--footer {
-  // @include flex($ai:baseline,$jc:null);
   text-align: center;
 
   @media screen and (min-width: 1200px) {
