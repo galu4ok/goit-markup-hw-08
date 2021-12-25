@@ -23,5 +23,6 @@
 
   @media screen and (min-width: 1200px) {
     @include flex($ai:baseline,$jc:null);
+    text-align: left;
   }
 }

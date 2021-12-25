@@ -354,6 +354,7 @@ body {
   .container--footer {
     display: flex;
     align-items: baseline;
+    text-align: left;
   }
 }
 
@@ -466,10 +467,6 @@ body {
 
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
-}
-
-.address__list {
-  margin-bottom: 60px;
 }
 
 .address__link {
@@ -812,9 +809,16 @@ body {
   padding: 63px 24px;
 }
 
+.subscription-form {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 1200px) {
   .subscription-form {
     display: flex;
+    max-width: 570px;
+    margin: 0;
   }
 }
 
@@ -837,20 +841,19 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
 .subscription-form__button {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 28px;
-}
-
-.subscription__text {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .icon-telegram {
@@ -1189,7 +1192,6 @@ body {
 }
 
 .customers__item {
-  height: 92px;
   margin: 15px;
   flex-basis: calc(100% / 2 - 30px);
 }
@@ -1208,7 +1210,7 @@ body {
 
 .customers__link {
   width: 100%;
-  height: 100%;
+  height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   display: flex;
@@ -1233,16 +1235,45 @@ body {
   padding: 60px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .footer__tablet {
   margin-bottom: 60px;
 }
 
-.join-networks {
-  width: 206px;
-  margin: auto;
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
-.join-networks__text {
+@media screen and (min-width: 1200px) {
+  .footer__tablet {
+    margin-bottom: 0px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer__nav {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__nav {
+    margin-right: 70px;
+  }
+}
+
+.footer__text {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;

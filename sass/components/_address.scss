@@ -1,6 +1,3 @@
-.address__list {
-  margin-bottom: 60px;
-  }
 .address__link {
   color: $footer-link-color;
   transition: color $duration $timing-function;
@@ -8,7 +5,7 @@
   &:hover,
   &:focus {
     color: $accent-color;
-}
+  }
 }
 .address__link--map {
   color: $primary-white-color;
@@ -16,7 +13,7 @@
   &:hover,
   &:focus {
     color: $accent-color;
-}
+  }
 }
 .address__item {
   font-style: normal;
@@ -26,5 +23,5 @@
 
   &:not(:last-child) {
   margin-bottom: 9px;
-}
+  }
 }
