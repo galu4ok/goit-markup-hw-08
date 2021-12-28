@@ -827,9 +827,7 @@ body {
 }
 
 .projects__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -30px -30px 0;
+  margin-bottom: -30px;
 }
 
 .project__item {
