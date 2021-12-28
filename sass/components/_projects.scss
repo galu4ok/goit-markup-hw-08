@@ -3,17 +3,34 @@
   // flex-wrap: wrap;
   // margin: 0 -30px -30px 0;
   margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .project__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin: 0 30px 30px 0;
+  // flex-basis: calc(100% / 3 - 30px);
+  // margin: 0 30px 30px 0;
+  margin-bottom: 30px;
   background-color: $primary-white-color;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
 }   
 .project__description {
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid $border-portfolio-card;
   border-bottom: 1px solid $border-portfolio-card;
   border-left: 1px solid $border-portfolio-card;
+
 }
 .project__text {
   font-size: 16px;
@@ -21,6 +38,10 @@
   color: $secondary-text-color;
 }
 .project__link {
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: $main-text-color;
   transition: box-shadow $duration $timing-function;
 
