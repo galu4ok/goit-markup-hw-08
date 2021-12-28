@@ -1,8 +1,6 @@
 .projects__list {
-  // display: flex;
-  // flex-wrap: wrap;
-  // margin: 0 -30px -30px 0;
-  margin-bottom: -30px;
+    margin-bottom: -30px;
+    
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -10,8 +8,6 @@
   }
 }
 .project__item {
-  // flex-basis: calc(100% / 3 - 30px);
-  // margin: 0 30px 30px 0;
   margin-bottom: 30px;
   background-color: $primary-white-color;
 
