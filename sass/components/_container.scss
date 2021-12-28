@@ -14,15 +14,15 @@
   }
 }
 .container--header { 
-  position: relative;
-  height: 60px;
-  
-  @media screen and (min-width: 768) {
-    height: 80px;
-    @include flex ($jc:null);
+  @media screen and (max-width: 767.98px) {
+    position: relative;
+    height: 60px;
   }
+  
+  height: 80px;
+  @include flex ($jc:null);
 }
-.container--footer {
+  .container--footer {
   text-align: center;
 
   @media screen and (min-width: 1200px) {

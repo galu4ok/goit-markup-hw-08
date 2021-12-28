@@ -2,10 +2,11 @@
   @include flex ($jc:null);
 }
 .nav__list {
+  @include flex ($jc:null);
+
   @media screen and (max-width: 767.98px) {
     display: none;
   }
-  @include flex ($jc:null);
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;
