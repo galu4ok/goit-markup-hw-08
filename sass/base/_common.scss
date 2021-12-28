@@ -1,9 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
-  padding-top: 80px;
+  padding-top: 60px;
   background-color: $primary-white-color;
   color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
 }
 .link {
   text-decoration: none;

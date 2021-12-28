@@ -15,7 +15,12 @@
 }
 .container--header { 
   position: relative;
-  @include flex ($jc:null);
+  height: 60px;
+  
+  @media screen and (min-width: 768) {
+    height: 80px;
+    @include flex ($jc:null);
+  }
 }
 .container--footer {
   text-align: center;

@@ -3,6 +3,7 @@
     display: none;
   }
   @include flex ($jc:null);
+  flex-direction: column;
   margin-left: auto;
 }
 .contacts__item:not(:last-child) {
@@ -11,6 +12,12 @@
 .contacts__icon{
   margin-right: 10px;
   fill:currentColor;
+}
+.contacts__list {
+  @media screen and (min-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  }
 }
 .contacts__link {
   color: $secondary-text-color;
