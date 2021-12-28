@@ -14,6 +14,7 @@
   }
 }
 .container--header { 
+  position: relative;
   @include flex ($jc:null);
 }
 .container--footer {

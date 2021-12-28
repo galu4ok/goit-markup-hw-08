@@ -1,5 +1,8 @@
 .contacts {
-  @extend %flexCenter;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+  @include flex ($jc:null);
   margin-left: auto;
 }
 .contacts__item:not(:last-child) {

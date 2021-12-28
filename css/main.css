@@ -312,11 +312,6 @@ body {
   overflow: hidden;
 }
 
-.contacts {
-  display: flex;
-  align-items: center;
-}
-
 .container {
   width: 100%;
   padding: 0 15px;
@@ -342,6 +337,7 @@ body {
 }
 
 .container--header {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -441,7 +437,15 @@ body {
 }
 
 .contacts {
+  display: flex;
+  align-items: center;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767.98px) {
+  .contacts {
+    display: none;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -498,14 +502,24 @@ body {
   margin-bottom: 9px;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.nav__list {
-  display: flex;
-  align-items: center;
+@media screen and (max-width: 767.98px) {
+  .nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -924,6 +938,158 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.open-mob-menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.open-mob-menu__button:hover, .open-mob-menu__button:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .open-mob-menu__button {
+    display: none;
+  }
+}
+
+.close-mob-menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-mob-menu__button:hover, .close-mob-menu__button:focus {
+  color: #2196f3;
+}
+
+.close-mob-menu__icon-menu {
+  fill: currentColor;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #ffffff;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+}
+
+.mob-menu .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mob-menu-bottom {
+  margin-top: auto;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  position: relative;
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: #2196f3;
+}
+
+.mob-menu__link--current {
+  color: #2196f3;
+}
+
+.mob-menu-contacts {
+  margin-bottom: 64px;
+}
+
+.mob-menu-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-contacts__link {
+  color: #757575;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-contacts__link:hover, .mob-menu-contacts__link:focus {
+  color: #2196f3;
+}
+
+.mob-menu-contacts__link:last-of-type {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+
+.mob-menu-social {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu-social {
+    display: none;
+  }
+}
+
+.mob-menu-social__link {
+  color: #2196f3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu-social__item {
+  display: flex;
+  align-items: center;
+}
+
+.mob-menu-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mob-menu-social__item:not(:last-child)::after {
+  display: block;
+  content: '';
+  height: 22px;
+  width: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
@@ -947,6 +1113,12 @@ body {
 
 .header__logo span {
   color: #000000;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__logo {
+    margin-right: 88px;
+  }
 }
 
 .footer__logo {
@@ -1031,7 +1203,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 3;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
