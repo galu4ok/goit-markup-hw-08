@@ -5,7 +5,6 @@
   background-color: transparent;
   border: none;
   transition: color $duration $timing-function;
-
   &:hover,
   &:focus {
   color:$accent-color;
@@ -25,7 +24,6 @@
   background-color: $primary-white-color;
   transform: translateX(100%);
   transition: transform $duration $timing-function;
-
   &.is-open {
   transform: translateX(0);
   }
@@ -47,7 +45,6 @@
   @include font (40px,500,1.18);
   letter-spacing: 0.02em;
   transition: color $duration $timing-function;
-
   &:hover,
   &:focus {
     color: $accent-color;
@@ -67,17 +64,24 @@
   @include font (24px,500,1.17);
   letter-spacing: 0.02em;
   transition: color $duration $timing-function;
-
   &:hover,
   &:focus {
     color: $accent-color;
   }
+  @media screen and (max-width: 479.98px) {
+    @include font (5vw,500,1.17);
+  }
   &--large {
     @include font (34px,500,1.18);
+    
+    @media screen and (max-width: 479.98px) {
+      @include font (7vw,500,1.18);
+    }
   }
 }
 .mob-menu-social {
   display: flex;
+  flex-wrap: wrap;
   
   @media screen and (min-width: 768px) {
     display: none;
@@ -87,11 +91,16 @@
   color: $accent-color; 
   @include font (18px,500,1.22);
   letter-spacing: 0.02em;
+  transition: color $duration $timing-function;
+  
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+  }
 }
 .mob-menu-social__item {
   display: flex;
   align-items: center;
-
   &:not(:last-child) {
     margin-right: 10px;
   }

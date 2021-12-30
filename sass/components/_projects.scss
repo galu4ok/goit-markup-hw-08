@@ -65,6 +65,7 @@
   background-color:$portfolio-card-bg-overlay;
   transform: translateY(101%);
   transition: transform $duration $timing-function;
+  overflow: scroll;
   }
 .project__overlay-text {
   font-size: 18px;
