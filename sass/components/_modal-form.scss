@@ -99,7 +99,7 @@
   width: 16px;
   height: 15px;
   border: 2px solid $main-text-color;
-  margin-right: 8px;
+  margin-right: 3px;
   border-radius: 2px;
   @include flex ();
   }
@@ -129,6 +129,8 @@
 .modal-form__agreement-link {
   color: $accent-color;
   text-decoration-skip-ink: none;
+  margin-left: 5px;
+
 }
 .modal-form__button {
   padding: 10px 55px;

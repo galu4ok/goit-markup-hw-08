@@ -18,15 +18,18 @@
     position: relative;
     height: 60px;
   }
-  
   height: 80px;
   @include flex ($jc:null);
 }
-  .container--footer {
+.container--footer {
   text-align: center;
 
   @media screen and (min-width: 1200px) {
     @include flex($ai:baseline,$jc:null);
     text-align: left;
   }
+}
+.container--hero{
+  @include flex ();
+  flex-direction: column;
 }
