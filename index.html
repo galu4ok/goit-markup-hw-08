@@ -76,7 +76,10 @@
       <!-- Герой -->
       <section class="section hero">
         <div class="container container--hero">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
           <button type="button" class="hero__button button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
@@ -607,20 +610,22 @@
             ></textarea>
           </div>
           <div class="modal-form__agreement-field">
-            <input
-              type="checkbox"
-              name="agreement"
-              id="modal-check"
-              class="modal-form__check visually-hidden"
-            />
             <label for="modal-check" class="modal-form__check-text">
-              <span>
+              <input
+                type="checkbox"
+                name="agreement"
+                id="modal-check"
+                class="modal-form__check visually-hidden"
+              />
+              <span class="modal-form__checkbox">
                 <svg class="modal-form__icon-check" width="16" height="15">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю<a href="" class="modal-form__agreement-link"
-                >Условия договора</a
+              <span class="modal-form__agreement-text">
+                Соглашаюсь с рассылкой и принимаю<a href="" class="modal-form__agreement-link"
+                  >Условия договора</a
+                ></span
               ></label
             >
           </div>

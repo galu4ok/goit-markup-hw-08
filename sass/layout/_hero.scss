@@ -48,7 +48,9 @@
   margin-bottom: 30px;
   
   @media screen and (max-width: 479.98px) {
-    @include font (6vw,900,2);
+    // @include font (18px,900,2);
+    font-size: calc(18px + (26 - 18) * (100vw - 320px)/(480 - 320));
+    line-height: calc(1.2em + 2vw);
   }
   @media screen and (min-width: 480px) {
     @include font (26px,900,1.62)
