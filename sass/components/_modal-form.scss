@@ -1,8 +1,19 @@
 .modal-form__field {
   margin-bottom: 10px;
+  position: relative;
+  transition: color $duration $timing-function;
+
+  &:focus-within > .modal-form__label {
+    color:$accent-color ;
+  }
 }
 .modal-form__comment-field{
   margin-bottom: 20px;
+  transition: color $duration $timing-function;
+
+  &:focus-within > .modal-form__label {
+    color:$accent-color ;
+  }
 }
 .modal-form__agreement-field {
   margin-bottom: 30px;
@@ -54,19 +65,20 @@
 .modal-form__label {
   @include font (12px,400,1.17);
   letter-spacing: 0.01em;
-
   display: block;
   margin-bottom: 4px;
   color:$secondary-text-color;
 }
-.modal-form__wrap {
-  position: relative;
-}
+// .modal-form__wrap {
+//   position: relative;
+// }
 .modal-form__icon {
   position: absolute;
-  top:50%;
-  left: 12px;;
-  transform: translateY(-50%);
+  // top:50%;
+  // left: 12px;
+  top: 28px;
+  left: 12px;
+  // transform: translateY(-50%);
   transition: fill $duration $timing-function;
 }
 .modal__close-button {
@@ -93,7 +105,6 @@
   position: relative;
   @include font (12px,400,1.17);
   color: $secondary-text-color;
-  // 
   display: inline-flex;
   align-items: center;
   
