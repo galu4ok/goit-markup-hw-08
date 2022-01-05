@@ -783,14 +783,12 @@ body {
 
 .modal-form__check-text {
   position: relative;
-  text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
   color: #757575;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {

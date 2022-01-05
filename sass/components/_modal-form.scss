@@ -91,10 +91,11 @@
 }
 .modal-form__check-text{
   position: relative;
-  text-align: center;
   @include font (12px,400,1.17);
   color: $secondary-text-color;
-  @include flex ();
+  // 
+  display: inline-flex;
+  align-items: center;
   
   @media screen and (min-width: 1200px) {
     @include font (14px,400,1.71);
